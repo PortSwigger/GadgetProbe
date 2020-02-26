@@ -1,0 +1,28 @@
+<p>Description</p>
+
+<p>This extension augments Intruder to probe endpoints
+consuming Java serialized objects to identify classes,
+libraries, and library versions on remote Java classpaths.</p>
+
+<p>Usage</p>
+
+<ol>
+	<li>Send your request to Intruder, highlight the payload
+position of your serialized object, and add a wordlist of Java
+class names to look for.</li>
+	<li>Add the custom intruder payload processor via "Invoke Burp
+Extension->Classname to GadgetProbe" to convert your
+payload string (e.g.,
+&quot;org.apache.commons.collections.functors.invokertransformer&quot;)
+to a Java serialized object probe.</li>
+	<li>Run the Intruder attack. The results will be sent back via
+DNS interactions to a Collaborator instance managed by the
+extension.</li>
+	<li>View the results in the GadgetProbe tab.</li>
+	<li>Use the &quot;Detect Library Versions&quot; button to detect version
+signatures on supported libraries. (requires GadgetProbe
+analyzer wordlist; see GitHub)</li>
+</ol>
+
+<p>For more details and wordlists, check out the project on
+GitHub: https://github.com/BishopFox/GadgetProbe</p>

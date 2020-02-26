@@ -1,0 +1,12 @@
+Uuid: e20cad259d73403bba5ac4e393a8583f
+ExtensionType: 1
+Name: GadgetProbe
+RepoName: gadgetprobe
+ScreenVersion: 1.0
+SerialVersion: 5
+MinPlatformVersion: 0
+ProOnly: False
+Author: Jake Miller (@theBumbleSec), Bishop Fox
+ShortDescription: Augments Intruder to probe endpoints consuming Java serialized objects to identify classes, libraries, and library versions on remote Java classpaths.
+EntryPoint: build/libs/GadgetProbe-1.0-SNAPSHOT-all.jar
+BuildCommand: ./gradlew shadowJar
